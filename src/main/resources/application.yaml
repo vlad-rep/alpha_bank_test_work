@@ -1,0 +1,31 @@
+server.port: 8081
+
+logging.level:
+  com.vlad.repin: INFO
+  org.springframework: INFO
+
+feign:
+  client:
+    config:
+      open-exchange-client:
+        connectTimeout: 2000
+        readTimeout: 5000
+        loggerLevel: FULL
+      gif-client:
+        connectTimeout: 2000
+        readTimeout: 5000
+        loggerLevel: FULL
+      giphy-client:
+        connectTimeout: 2000
+        readTimeout: 5000
+        loggerLevel: FULL
+
+alpha-bank.open-exchange-rates:
+  url: https://openexchangerates.org/api
+  app-id: e777549ed8194bc9aa925506be9101a2
+  currency: RUB
+
+alpha-bank.giphy:
+  main-url: https://api.giphy.com/v1/gifs
+  download-url: https://i.giphy.com/media/
+  api-key: 4wi6j1T6Pk3k7sdUTnyP326hj7aOBc13
