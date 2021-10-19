@@ -31,7 +31,7 @@
 
 # Инструкция по запуску
 1) Скачать копию с гитхаб:
-   https://github.com/....
+   https://github.com/vlad-rep/alpha_bank_test_work.git
 2) Проверить конфигурацию в application.yaml
 
     (Установить необходимую валюту: alpha-bank.open-exchange-rates.currency)
