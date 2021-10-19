@@ -1,0 +1,51 @@
+plugins {
+    id 'org.springframework.boot' version '2.5.3'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.vlad.repin'
+version = '1.0.0'
+sourceCompatibility = '16'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+ext {
+    lombokVersion = "1.18.20"
+    assertjVersion = "3.20.2"
+    testcontainersVersion = "1.15.2"
+    springCloudVersion = "2020.0.4"
+    wiremockversion = "2.27.2"
+}
+
+dependencies {
+    compileOnly "org.projectlombok:lombok:$lombokVersion"
+    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+    testCompileOnly "org.projectlombok:lombok:$lombokVersion"
+    testAnnotationProcessor "org.projectlombok:lombok:$lombokVersion"
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+
+    testImplementation("org.testcontainers:junit-jupiter:$testcontainersVersion")
+    testImplementation("com.github.tomakehurst:wiremock:$wiremockversion")
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testCompileOnly("org.assertj:assertj-core:$assertjVersion")
+}
+
+dependencyManagement{
+    imports{
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
+jar {
+    enabled = false
+}

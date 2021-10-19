@@ -1,0 +1,12 @@
+{
+  "disclaimer": "https://openexchangerates.org/terms",
+  "license": "https://openexchangerates.org/license",
+  "timestamp": 1634255998,
+  "base": "USD",
+  "rates": {
+    "RSD": 101.192198,
+    "RUB": 70.4025,
+    "RWF": 1010.372244,
+    "SAR": 3.75083
+  }
+}

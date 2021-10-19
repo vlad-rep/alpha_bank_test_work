@@ -1,0 +1,13 @@
+
+alpha-bank.open-exchange-rates:
+  url: http://localhost:8095
+  app-id: e777549ed8194bc9aa925506be9101a2
+  currency: RUB
+
+alpha-bank.giphy:
+  main-url: http://localhost:8095
+  download-url: http://localhost:8095/media
+  api-key: 4wi6j1T6Pk3k7sdUTnyP326hj7aOBc13
+
+logging.level:
+  com.vlad.repin: TRACE
