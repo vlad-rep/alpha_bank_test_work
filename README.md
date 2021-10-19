@@ -27,7 +27,7 @@
     Сборка и запуск Docker контейнера с этим сервисом
 # HTTP endpoint
     Получить гифку по курсу:
-    GET /difference/gid/get
+    GET /difference/gif/get
 
 # Инструкция по запуску
 1) Скачать копию с гитхаб:
