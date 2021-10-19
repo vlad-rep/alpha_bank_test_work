@@ -25,6 +25,9 @@
     
     Nice to Have
     Сборка и запуск Docker контейнера с этим сервисом
+# HTTP endpoint
+    Получить гифку по курсу:
+    GET /difference/gid/get
 
 # Инструкция по запуску
 1) Скачать копию с гитхаб:
@@ -45,10 +48,5 @@
     Build image for Dockerfile
       docker build -f Dockerfile -t alpha_bank .
       docker run -p 8081:8081 alpha_bank
-
-#HTTP endpoint
-    Получить гифку по курсу:
-    GET /difference/gid/get
-
 
 
